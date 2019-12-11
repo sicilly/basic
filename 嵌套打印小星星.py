@@ -11,5 +11,5 @@ while row <= 5:
     while col <= row:
         print("*",end="")
         col += 1
-    print("")
+    print("")  # 在一行星星输出完成之后，添加换行
     row += 1
