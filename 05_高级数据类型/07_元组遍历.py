@@ -1,0 +1,1 @@
+info_tuple = ("zhangsan", 18, 1.75)
