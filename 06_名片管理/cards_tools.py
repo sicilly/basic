@@ -9,3 +9,21 @@ def show_menu():
     print("")
     print("0. 退出系统")
     print("*"*50)
+
+
+def new_card():
+    """新增名片"""
+    print("-" * 50)
+    print("新增名片")
+
+
+def show_all():
+    """显示所有名片"""
+    print("-" * 50)
+    print("显示所有名片")
+
+
+def search_card():
+    """搜索名片"""
+    print("-" * 50)
+    print("搜索名片")
