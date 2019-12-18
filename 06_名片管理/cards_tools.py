@@ -101,12 +101,23 @@ def deal_card(find_dict):
     action_str = input("请选择要执行的操作："
                        "【1】修改 【2】删除 【0】返回上级菜单")
     if action_str == "1":
-        find_dict["name"] = input("姓名：")
-        find_dict["phone"] = input("手机：")
-        find_dict["qq"] = input("QQ：")
-        find_dict["email"] = input("邮箱：")
+        find_dict["name"] = input_card_info(find_dict["name"], "姓名：")
+        find_dict["phone"] = input_card_info(find_dict["phone"], "手机：")
+        find_dict["qq"] = input_card_info(find_dict["qq"], "QQ：")
+        find_dict["email"] = input_card_info(find_dict["email"], "邮箱：")
         print("修改成功！")
     if action_str == "2":
         card_list.remove(find_dict)
         print("删除成功！")
 
+
+def input_card_info(dict_value, tip_message):
+
+    # 1. 提示用户输入内容
+    result_str = input(tip_message)
+    # 2. 针对用户的输入进行判断，如果用户输入了内容，直接返回结果
+    if len(result_str) > 0:
+        return result_str
+    # 3. 如果用户没有输入内容，返回字典中原有的值
+    else:
+        return dict_value
