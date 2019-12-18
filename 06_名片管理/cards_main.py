@@ -12,7 +12,7 @@ while True:
     # 没有使用int转换用户输入，可以避免一旦用户输入的2
     # 不是数字，导致程序运行出错
     if action_str in ["1", "2", "3"]:
-        # 新增名片1
+        # 新增名片
         if action_str == "1":
             cards_tools.new_card()
         # 显示全部
@@ -21,7 +21,7 @@ while True:
         # 查询名片
         elif action_str == "3":
             cards_tools.search_card()
-        pass
+
     # 0 退出系统
     elif action_str == "0":
         print("欢迎再次使用【名片管理系统】")
