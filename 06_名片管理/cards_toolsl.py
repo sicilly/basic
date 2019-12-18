@@ -4,7 +4,19 @@ while True:
     print("您选择的操作是【%s】" % action_str)
 
     # 1,2,3 针对名片的操作
+    # 字符串判断
+    # 使用in针对列表判断，避免使用or拼接复杂的逻辑条件
+    # 没有使用int转换用户输入，可以避免一旦用户输入的不是数字，导致程序运行出错
     if action_str in ["1", "2", "3"]:
+        # 新增名片
+        if action_str == "1":
+            pass
+        # 显示全部
+        elif action_str == "2":
+            pass
+        # 查询名片
+        elif action_str == "3":
+            pass
         pass
     # 0 退出系统
     elif action_str == "0":
