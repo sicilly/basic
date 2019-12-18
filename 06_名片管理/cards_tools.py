@@ -103,5 +103,6 @@ def deal_card(find_dict):
     if action_str == "1":
         print("修改")
     if action_str == "2":
-        print("删除")
+        card_list.remove(find_dict)
+        print("删除成功")
 
