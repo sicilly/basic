@@ -1,7 +1,8 @@
+import cards_tools
 # 无限循环，由用户主动决定什么时候退出循环
 while True:
 
-    # TODO(Sicilly) 显示功能菜单
+    cards_tools.show_menu()
     action_str = input("请选择希望执行的操作：")
     print("您选择的操作是【%s】" % action_str)
 
