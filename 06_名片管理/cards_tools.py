@@ -23,8 +23,8 @@ def new_card():
     # 1. 提示用户输入名片的详细信息
     name_str = input("请输入姓名：")
     phone_str = input("请输入电话：")
-    qq_str = input("请输入qq'：")
-    email_str = input("请输入邮箱'：")
+    qq_str = input("请输入qq：")
+    email_str = input("请输入邮箱：")
 
     # 2. 使用用户输入的信息建立一个名片字典
     card_dict = {"name": name_str,
@@ -77,3 +77,20 @@ def search_card():
     """搜索名片"""
     print("-" * 50)
     print("搜索名片")
+
+    # 1. 提示用户输入要搜索的姓名
+    find_name = input("请输入要搜索的姓名")
+    # 2. 遍历名片列表，查询要搜索的姓名，如果没有找到，需要提示用户
+    for card_dict in card_list:
+        if card_dict["name"] == find_name:
+            print("姓名\t\t电话\t\tQQ\t\t邮箱")
+            print("=" * 50)
+            print("%s\t\t%s\t\t%s\t\t%s" % (card_dict["name"],
+                                            card_dict["phone"],
+                                            card_dict["qq"],
+                                            card_dict["email"]))
+            # TODO 针对找到的名片记录执行修改和删除的操作
+
+            break
+    else:
+        print("抱歉，没有找到 %s" % find_name)
