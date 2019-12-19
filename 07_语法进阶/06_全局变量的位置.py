@@ -7,7 +7,7 @@ num = 10
 def demo():
     print("%d" % num)
     print("%s" % title)
-    print("%s" % name)
+    # print("%s" % name)
 
 
 # 再定义一个全局变量
