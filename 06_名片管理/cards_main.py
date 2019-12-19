@@ -1,3 +1,5 @@
+#! D:\Anaconda3\python.exe
+
 import cards_tools
 # 无限循环，由用户主动决定什么时候退出循环
 while True:
