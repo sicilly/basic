@@ -12,7 +12,6 @@ b = 100
 # a = a - b
 
 # 解法三： python专有
-
 a, b = b, a
 
 print(a)
