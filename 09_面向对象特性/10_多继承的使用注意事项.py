@@ -26,3 +26,6 @@ c = C()
 
 c.test()
 c.demo()
+
+# 确定C类对象调用方法的顺序
+print(C.__mro__)
